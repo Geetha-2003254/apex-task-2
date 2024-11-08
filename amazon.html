@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon - Sample Webpage</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Amazon</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#todo">To-Do List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <h2>Welcome to Amazon</h2>
+            <p>Your one-stop shop for everything you need! Amazon.in is India's most visited online shopping marketplace in India and more customers than ever rely on Amazon.in for online shopping. With orders from over 100% serviceable pin-codes in India, Amazon.in has become the online destination for small and medium sized enterprises.</p>
+
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <img src="https://m.media-amazon.com/images/I/71bzEJELf5L._AC_UF894,1000_QL80_.jpg" width="300" height="200">
+                <img src="https://m.media-amazon.com/images/I/91n4Y6guNXL._AC_UF894,1000_QL80_.jpg" width="300" height="200">
+                <img src="https://imgeng.jagran.com/images/2023/feb/amazon%20sale%2020231676523849256.jpg" width="300" height="200">
+                <img src="https://m.media-amazon.com/images/I/81JUhGEQFoL.jpg" width="300" height="200">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMessage" class="form-message"></p>
+        </div>
+    
+
+    <section id="todo" class="todo">
+        <div class="container">
+            <h2>To-Do List</h2>
+            <input type="text" id="todoInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="todoList"></ul>
+        </div>
+    </section>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Amazon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="task2.js"></script>
+</body>
+</html>

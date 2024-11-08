@@ -1,0 +1,130 @@
+. {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+ }
+
+header {
+    background: #232F3E;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.home {
+    padding: 60px 0;
+    text-align: center;
+    background: url('https://via.placeholder.com/1600x400?text=Welcome+to+Amazon') no-repeat center center/cover;
+    background-color: #c71585;
+}
+
+.gallery {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    margin: 10px;
+    border : 2px solid #232F3E;
+    border-radius: 5px;
+}
+
+.contact {
+    padding: 40px 0;
+    text-align: center;
+    background: #orange;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.todo {
+    padding: 40px 0;
+    text-align: center;
+    background: #fff;
+}
+
+.todo input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.todo button {
+    padding: 10px 20px;
+}
+
+.todo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.todo li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li button {
+    background: red;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
